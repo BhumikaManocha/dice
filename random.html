@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+	
+</style>
+<head>
+	<title>rand</title>
+	<link rel="stylesheet" type="text/css" href="random.css">
+</head>
+<body>
+	<h1 id="die"><b><i><u>ROLL THE DICE!!!</u></i></b></h1>
+	<button id="demo" onclick="onclickfunc()">Roll the dice..</button>
+	<script>
+		var max = 6;
+		var min = 1;
+		function onclickfunc() {
+					var p = (Math.floor(Math.random()*(max-min+1)+min));
+					if(p==1)
+						document.getElementById('demo').innerHTML = "*";
+					if(p==2)
+						document.getElementById('demo').innerHTML = "* *";
+					if(p==3)
+						document.getElementById('demo').innerHTML = "* *";
+					if(p==4)
+						document.getElementById('demo').innerHTML = "* * * *";
+					if(p==5)
+						document.getElementById('demo').innerHTML = "* * * * *";
+					if(p==6)
+						document.getElementById('demo').innerHTML = "* * * * * *"; 
+		}
+	</script>
+</body>
+</html>
